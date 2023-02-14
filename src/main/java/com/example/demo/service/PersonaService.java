@@ -30,15 +30,4 @@ public class PersonaService {
 	}
 	
 	
-	public PersonaModel update(PersonaModel model) {
-		
-		if(personaRepository.existsById(model.getId()))
-		{
-			return personaRepository.save(model);
-		}else {
-			return null;
-		}
-	}
-	
-	
 }

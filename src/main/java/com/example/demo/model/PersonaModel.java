@@ -1,11 +1,16 @@
 package com.example.demo.model;
 
 import javax.persistence.*;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name = "persona")
+@AllArgsConstructor
+@Builder(toBuilder=true)
 public class PersonaModel {
 
 	@Id
